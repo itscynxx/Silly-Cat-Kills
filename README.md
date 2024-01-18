@@ -9,7 +9,7 @@ This mod relies on [ClientKillCallback](https://northstar.thunderstore.io/packag
 Videos cannot be moved due to limitations in the Titanfall 2 engine. BIK videos (which this mod uses) must be played from the top left of the screen.
 Transparency also doesn't work, meaning you can't just use transparency to move it somewhere else.
 
-Download from the releases tab on GitHub or from [Thunderstore](
+Download from the releases tab on GitHub or from [Thunderstore](https://northstar.thunderstore.io/package/itscynxx/Silly_Cat_Kills/)
 
 ## Mod Settings features
 
