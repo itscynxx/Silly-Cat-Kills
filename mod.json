@@ -1,0 +1,46 @@
+{
+	"Name": "Silly Cat Kills",
+	"Description": "Plays silly cat videos when you kill someone",
+	"Version": "1.0.0",
+	"LoadPriority": 2,
+	"Dependencies": {
+		"CATS_HAS_CALLBACK": "S2.ClientKillCallback"
+	},
+	"ConVars": [
+		{
+			"Name": "silly_cat_size",
+			"DefaultValue": "500"
+		},
+		{
+			"Name": "cat_callback_remind",
+			"DefaultValue": "1"
+		},
+		{
+			"Name": "cat_specify_video",
+			"DefaultValue": "All"
+		}
+	],
+	"Scripts": [
+		{
+			"Path": "silly_cats_mod_settings.nut",
+			"RunOn": "UI",
+			"UICallback": {
+				"Before": "Silly_Cats_Mod_Settings"
+			}
+		},
+		{
+			"Path": "silly_cats.nut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback": {
+				"After": "Silly_Cat_MP_Init"
+			}
+		},
+		{
+			"Path": "silly_cats_check_callback.nut",
+			"RunOn": "UI",
+			"UICallback": {
+				"After": "Silly_Cat_UI_Init"
+			}
+		}
+	]
+}
